@@ -1,0 +1,29 @@
+- name: foo image
+  url: https://cdn-img.auone.jp/pass/pass/top_bnr/btn_smapassday4nitimae_12.jpg
+  request:
+    skip: true
+  response:
+    body: 600x240.png
+
+- name: foo image
+  url: http://www.hatena.ne.jp/images/portal/logo-portal-top2@2x.png
+  request:
+    skip: true
+  response:
+    body: ./bar.png
+
+- name: hatena mobile logo image
+  url: http://www.hatena.ne.jp/images/hatenaportal/common/logo@2x.png
+  request:
+    skip: true
+  response:
+    body: 258x40.png
+
+- name: slow
+  url: http://example.org
+  method: GET
+  request:
+    skip: true
+  response:
+    delay: 10
+    body: ./bar.png
